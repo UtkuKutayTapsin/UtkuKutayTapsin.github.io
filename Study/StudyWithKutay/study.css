@@ -1,0 +1,140 @@
+body {
+   font-family: Arial, sans-serif;
+   color: #fff;
+   letter-spacing: normal;
+   line-height: normal;
+   word-spacing: normal;
+   text-indent: 0%;
+   margin: 0;
+   padding: 0;
+}
+
+a:hover {
+   color: red;
+ }
+
+ a:link {
+   color: forestgreen;
+   text-decoration-color: hotpink;
+ }
+
+header {
+   background-color: #FFA500;
+   color: #fff;
+   padding: 20px;
+   text-align: center;
+}
+
+nav ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: space-between;
+}
+
+.center {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;
+ }
+
+nav li {
+   margin-right: 20px;
+}
+
+h1,h2 {text-align: center;
+text-transform: uppercase;
+font-size: 2rem;
+}
+
+p {
+   position: fixed;
+   left: auto;
+   top: auto;
+}
+
+h1 {
+   position: relative;
+   float: none;
+}
+
+nav a {
+   color: #fff;
+   text-decoration: none;
+   font-size: 1em;
+}
+
+.contact {
+   padding: 20px;
+   text-align: center;
+}
+
+.contact form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.contact input, .contact textarea {
+   width: 100%;
+   padding: 10px;
+   margin-bottom: 10px;
+   border-color: aquamarine;
+   border-style: groove;
+   border-width: 0cap;
+   border-radius: 5px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact button[type="submit"] {
+   background-color: #333;
+   color: #fff;
+   padding: 10px 20px;
+   border-color: aqua;
+   border-style: dashed;
+   border-width: 0cap;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+/*making the background black*/
+body {background-color: black;}
+
+footer {
+   background-color: #FFA500;
+   color: #fff;
+   padding: 10px;
+   text-align: center;
+}
+
+#cookies-message {
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0.7);
+   color: white;
+   text-align: justify;
+   padding: 10px;
+   z-index: 9999; 
+}
+
+@media screen and (max-width: 768px) {
+   .content {
+       flex-direction: column;
+   }
+
+   header, footer {
+       padding: 0.5rem;
+   }
+}
+
+@media screen and (min-width: 769px) {
+   .content {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       gap: 20px;
+   }
+}
